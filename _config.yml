@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko_KR"
-title                    : "재민의 개발 성장일지 "
+title                    : "재민의 개발일지"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "코딩하는 재민"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "코딩하는 재민"
   avatar           : "/assets/images/realme.jpeg"
-  bio              : "차근차근 배우고 성장하는 기록."
+  bio              : "이것저것 찍먹중인 학부 3학년"
   location         : "Mapo-Seoul"
   email            : "ohj3694@naver.com"
   links:
