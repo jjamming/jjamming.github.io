@@ -10,3 +10,25 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+docs:
+  - title: Security
+    children:
+      - title: "PICO CTF"
+        url: /categories/picoCTF
+      - title: "Dreamhack"
+        url: /categories/dreamhack
+  - title: Front-End
+    children:
+    - title: "React"
+      url: /categories/react
+  - title: Blog
+    children:
+    - title: "Github Blog"
+      url: /categories/githubBlog
+  - title: Project
+    children:
+    - title: "UMC 7th"
+      url: /categories/umc
+    - title: "졸업 프로젝트"
+      url: /categories/graduation
+  - title: BlockChain
