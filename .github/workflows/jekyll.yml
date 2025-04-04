@@ -1,0 +1,31 @@
+
+name: Deploy Jekyll site
+
+on:
+  push:
+    branches:
+      - master  # master 브랜치에 push할 때 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃 저장소
+        uses: actions/checkout@v3
+
+      - name: Ruby 및 Bundler 설정
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Jekyll 빌드
+        run: |
+          bundle install
+          bundle exec jekyll build
+
+      - name: GitHub Pages 배포
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
